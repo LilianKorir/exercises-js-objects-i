@@ -7,11 +7,13 @@ let process = require('process');
 
 let user = {};
 
-user['firstName'] = '<Change This>';
-user['lastName'] = '<Change This>';
-user['currentLocation'] = '<Change This>';
-user['favoriteSongs'] = ['One Song', 'Another Great Song', 'Last Great Song'];
-user['age'] = 108;
+user['firstName'] = 'Pendo';
+user['lastName'] = 'Wangu';
+user['currentLocation'] = 'Mombasa';
+user['favoriteSongs'] = ['Mapenzi ni bahari', 'Spirit', 'Lover'];
+user['age'] = 302;
+user['favouriteFood'] = ['Biriyani'];
+user['favoriteMovies'] = ['American son', 'Moonlight', 'Who cares what!']
 
 // To get started, set user['canBeDisplayed'] to true instead of false
 user['canBeDisplayed'] = true;
@@ -32,6 +34,7 @@ if (user['age'] >= 100) {
   console.log();
 }
 
+
 console.log('Looks like you have great taste in music. Your favorite songs:');
 
 for (let i = 0; i < user['favoriteSongs'].length; i += 1) {
@@ -40,3 +43,21 @@ for (let i = 0; i < user['favoriteSongs'].length; i += 1) {
 
   console.log(`${songPosition}. ${songName}`);
 }
+if (user['favouriteFood'] === 'Chapati') {
+  console.log('You have the most fantastic taste!')
+}
+console.log('Looks like you have great taste for movies. Your favorite movies:');
+for (let i = 0; i < user['favoriteMovies'].length; i += 1) {
+  let moviePosition = i + 1;
+  let movieName = user['favoriteMovies'][i];
+
+  console.log(`${moviePosition}. ${movieName}`);
+
+}
+function printFavourites(f) {
+ f = user['favoriteMovies'] + ' '+ user['favouriteFood']
+  return f;
+
+}
+console.log('..............');
+console.log(printFavourites('f'));
