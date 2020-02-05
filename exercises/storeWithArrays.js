@@ -30,7 +30,7 @@ function newUser(firstName, lastName, budget, email) {
   user[3] = email;
 
   return user;
-}'kevin@gmail.com'
+}
 
 /**
  * Creates and returns a new sofa (as an array).
@@ -60,7 +60,7 @@ let allUsers = [
   newUser('Alyssa', 'Morris', 1800.00, 'alyssa@gmail.com'),
   newUser('Mindy', 'Weaver', 200.00, 'mindly@gmail.com'),
   newUser('Louis', 'Washington', 850.00, 'louis@gmail.com'),
-  newUser('Kevin', 'Isaacs', 80.00, ),
+  newUser('Kevin', 'Isaacs', 80.00, 'kevin@gmail.com'),
   newUser('Kim', 'Kaka', 800.00, 'kim@gmail.com')
 ];
 
